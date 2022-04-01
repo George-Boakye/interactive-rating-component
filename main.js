@@ -1,42 +1,32 @@
-const numbers = document.querySelectorAll(".numbers");// all btns with numbers
-const btn = document.getElementById("submit");// button
+let numbers = document.querySelectorAll(".numbers");// all btns with numbers
+let btn = document.getElementById("submit");// button
+let evaluation = document.getElementById('evaluation');
+let secondCard = document.getElementById('second-card');
+let rating = document.getElementById('rating');
 
 
 
 for (let i = 0 ; i < numbers.length; i++) {
   numbers[i].addEventListener('click' , ()=>{
-    return document.numbers[i].outerText
+
+      // getting the clicked number from the buttons 1 to 5
+        let selectedNumber = numbers[i].innerHTML;
+
+        // remove previously selected rating to have one rating at a time
+        for(let i=0; i < numbers.length; i++){
+          numbers[i].classList.contains('selected')
+          numbers[i].classList.remove('selected');
+        }
+        
+        //add class to clicked number
+        numbers[i].classList.add('selected');
+        
+
+        //button to display the result card
+        btn.addEventListener('click', () => {
+          evaluation.style.display = "none";
+          secondCard.style.display = "block";
+          rating.innerText = selectedNumber;
+        });
   });
 }
-
-function getSelected(){
-
-  let answer = undefined;
-
-  // const selected = numbers.addEventListener('click', () =>{
-  //  console.log( document.getElementsByClassName("numbers").value)
-  // })
-  
-
-  //   numbers.forEach(number =>{
-  //   if(number.value === sel){
-  //       console.log("marked");
-  //   }
-  // })
-
-}
-getSelected();
-
-
-
-
-
-
-  // You selected  Add rating here  out of 5
-
-  // Thank you!
-
-  // We appreciate you taking the time to give a rating. If you ever need more support, 
-  // don’t hesitate to get in touch!
-
-  
