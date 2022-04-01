@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    background:  hsl(216, 12%, 8%);
+    color: white;
+    width: 375px;
+    height: 667px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 24px;
+    width: 18rem;
+}
+span{
+    font-size: 0.9375rem;
+    color: #FC7614;
+}
+.numbers{
+    width: 42px;
+    height: 42px;
+    background-color:  #262E38;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #262E38;
+    border-radius: 20px;
+    color: hsl(217, 12%, 63%);
+}
+.numbers:hover{
+    cursor: pointer;
+    background: hsl(217, 12%, 63%);
+    color: white;
+}
+.numbers:focus{
+    background: #FC7614;
+    outline: none;
+    color: white;
+}
+.ratings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-body{
+  width: 327px;
+  height: 360px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  border-radius: 15px;
+}
+
+.evaluation{
+    display: block;
+}
+
+.card-content{
+    margin: 24px;
+}
+
+.icon{
+    background-color:  #262E38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #262E38;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+
+button{
+    margin-top: 24px;
+    width: 279px;
+    height: 45px;
+    border-radius: 22.5px;
+    background: #FC7614;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    font-weight: bold;
+    line-height: 1.125rem;
+    letter-spacing: 1.866px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: white;
+    color: #FC7614;
+}
+
+
+
+/*SECOND CARD AFTER RESULTS */
+.second-card{
+    display: none;
+}
+
+.thankyou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.pic, .ratingContainer{
+    margin-bottom: 32px;
+}
+
+.ratingContainer{
+width: 193px;
+height: 32px;
+background:#262E38;
+border-radius: 22.5px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.paragraph{
+    width: 19.65rem;
+    height: 72px;
+    text-align: center;
+}
+
