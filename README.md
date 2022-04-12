@@ -40,7 +40,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Mistok98](https://www.frontendmentor.io/profile/Mistok98)
 - Twitter - [@kwame__george](https://twitter.com/kwame__george)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
